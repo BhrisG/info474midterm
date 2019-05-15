@@ -1,0 +1,46 @@
+body { 
+    font: 12px Arial;
+    background: #FEE97C;
+}
+
+path {
+    stroke-width: 2;
+    fill: none;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: grey;
+    stroke-width: 1;
+    shape-rendering: crispEdges;
+}
+
+div.tooltip {
+    position: absolute;
+    text-align: left;
+    width: 450px;
+    height: 160px;
+    padding-left: 20px;
+    font: 12px sans-serif;
+    background: white;
+    pointer-events: none;
+    padding-top: 10px;
+}
+
+.subtitle {
+    padding-top: 10px;
+}
+
+.seasonYear {
+    color: red;
+    font: 20px sans-serif;
+    font-weight: bold;
+    height: 20px;
+}
+
+.seasonDesc {
+    font: 15px "Times New Roman";
+    height: 10px;
+    font-weight: bold;
+}

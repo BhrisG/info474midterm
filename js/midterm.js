@@ -1,24 +1,25 @@
 (function () {
 
     let data = "no data";
-    let svgContainer = ""
+    let svgContainer = "";
+
     window.onload = function () {
         svgContainer = d3.select('body')
             .append('svg')
             .attr('height', 500)
-            .attr('width', 1250)
+            .attr('width', 1250);
 
         svgContainer.append('rect')
             .attr("x", 75)
             .attr("y", 50)
             .attr("height", 400)
             .attr("width", 1125)
-            .attr("fill", "white")
+            .attr("fill", "white");
 
         d3.csv("./data/seasons_data.csv")
             .then((data) => {
                 plotHistogram(data)
-            })
+            });
     }
 
     function makeTitle() {

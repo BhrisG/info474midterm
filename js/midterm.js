@@ -15,7 +15,7 @@
             .attr("width", 1125)
             .attr("fill", "white")
 
-        d3.csv("../data/seasons_data.csv")
+        d3.csv("./data/seasons_data.csv")
             .then((data) => {
                 plotHistogram(data)
             })
